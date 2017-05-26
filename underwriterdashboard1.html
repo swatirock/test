@@ -1,0 +1,58 @@
+
+<script>
+var x = 10;
+var y = x++;
+var z = ++x;
+console.log(x,y,z);
+
+var persons = [{"swati":26},
+			   {"sweta":20},
+			   {"praveen":19}];			   
+persons.forEach(function(a){
+console.log(a);
+});
+X = [1,2]
+X.push(X)
+console.log(X);
+
+alert(typeof persons[0]);		
+function list(type) {
+  var result = '<' + type + 'l><li>';
+  var args = Array.prototype.slice.call(arguments, 1);
+  result += args.join('</li><li>');
+  result += '</li></' + type + 'l>'; // end list
+
+  return result;
+}
+console.log(list());
+
+var point = [10,2,5,20,50,4];
+point.sort(function(a,b){
+return (b-a)
+});
+alert(point);
+
+var foo = new Object();
+	foo.name= "swati";
+	foo.address ="noida";
+	foo.age = 26;
+	foo.createMethod = function(a){
+			return foo.name;
+	}
+	console.log(foo.createMethod());
+	function reverseStr(str){
+		return	str.split("").reverse().join("");
+	}
+	alert(reverseStr("meena"));
+	function  reverseLoop(strs){
+	 var newValue = "";
+		for(i=strs.length; i>=0; i--){
+			newValue += strs[i];
+		}
+		return newValue;
+	}
+	alert(reverseLoop('test'));
+	
+	//var name = "swati"; for(i=name.length; i>=0; i--){console.log(name[i])};
+	
+</script>
